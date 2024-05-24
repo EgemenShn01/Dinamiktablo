@@ -1,8 +1,71 @@
-  body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("./rp5.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%; 
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: 600;
+}
+
+table.dataTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.dataTable thead th {
+    background-color: #1139eb;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+table.dataTable tbody tr:hover {
+    background-color: #ddd;
+}
+
+table.dataTable tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+button.dt-button, div.dt-button, a.dt-button {
+    background-color: #1139eb;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.dt-button:hover, div.dt-button:hover, a.dt-button:hover {
+    background-color: rgb(44, 33, 33);
+    color: rgb(76, 0, 255);
+    border: 2px solid #1139eb;
+}
