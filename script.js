@@ -48,7 +48,6 @@ function populateTable(data) {
         language: {
             url: 'https://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Turkish.json'
         },
-        order: [[3, 'asc']], // Varsayılan sıralama sütunu ve yönü (fiyat sütunu, artan sırada)
     });
 
 }
