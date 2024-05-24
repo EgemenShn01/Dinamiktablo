@@ -21,7 +21,7 @@ function fetchData() {
 }
 
 function populateTable(data) {
-    $('#dataTable').DataTable({
+    var table = $('#dataTable').DataTable({
         data: data,
         columns: [
             { data: 'id' },
@@ -41,13 +41,14 @@ function populateTable(data) {
             }
         ],
         dom: 'Bfrtip',
-        buttons: [
-            'excelHtml5',
-            'pdfHtml5',
+        buttons: [  
+         'excelHtml5',
+        'pdfHtml5',
         ],
         language: {
             url: 'https://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Turkish.json'
         },
         order: [[3, 'asc']], // Varsayılan sıralama sütunu ve yönü (fiyat sütunu, artan sırada)
     });
+
 }
